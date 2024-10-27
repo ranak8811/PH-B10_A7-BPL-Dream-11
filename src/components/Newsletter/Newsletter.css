@@ -1,0 +1,43 @@
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30vw;
+  height: 20vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-text {
+  mix-blend-mode: screen;
+  font-size: 3vw;
+  font-weight: bold;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+span {
+  display: block;
+  font-size: 3rem;
+  color: #333;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 3;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  .video-background {
+    width: 70vw;
+    height: 18vh;
+  }
+
+  .video-text {
+    font-size: 6vw;
+  }
+}
